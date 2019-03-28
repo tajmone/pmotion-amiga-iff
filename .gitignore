@@ -1,0 +1,37 @@
+################################################################################
+# Pro Motion Amiga IFF                                                         #
+# https://github.com/tajmone/pmotion-amiga-iff                                 #
+################################################################################
+
+*.lnk
+*.url
+
+### PureBasic
+#############
+*.pb.cfg
+*.pbi.cfg
+*.pbp
+project.cfg
+
+### Compiler output
+###################
+*.dll
+*.exe
+*.exp
+*.lib
+
+### TMP Work Files
+##################
+___*.*
+
+### Windows
+###########
+Desktop.ini
+
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+$RECYCLE.BIN/
+
+# EOF #
