@@ -14,6 +14,7 @@ Permission was granted by its author to reuse the code of **Module TinyIFF** wit
 <!-- MarkdownTOC autolink="true" bracket="round" autoanchor="false" lowercase="only_ascii" uri_encoding="true" levels="1,2,3" -->
 
 - [Folder Contents](#folder-contents)
+- [TinyIFF Versions](#tinyiff-versions)
 - [TinyIFF Supported Formats](#tinyiff-supported-formats)
 
 <!-- /MarkdownTOC -->
@@ -21,6 +22,29 @@ Permission was granted by its author to reuse the code of **Module TinyIFF** wit
 -----
 
 # Folder Contents
+
+Module TinyIFF sources:
+
+- [`TinyIFF_v1.1.pbi`][1.1 src]
+- [`TinyIFF_v1.2.pbi`][1.2 src]
+- [`TinyIFF_v1.5.pbi`][1.5 src]
+- [`TinyIFF24.pbi`][IFF24 src]
+
+Sample image viewers using TinyIFF:
+
+- [`DemoViewerTinyIFF.pb`][viewer src]
+- [`DemoViewerTinyIFF24.pb`][viewer24 src]
+
+Precompiled demo viewers (32-bit), for those who don't have PureBasic:
+
+- [`LICENSE`][LICENSE]
+- [`DemoViewerTinyIFF.exe`][viewer exe]
+- [`DemoViewerTinyIFF24.exe`][viewer24 exe]
+
+> __NOTE__ — The [`LICENSE`][LICENSE] file is required for the binary compiled executables, which rely on third party components used by the PureBasic compiler. Also, inclusion of precompiled binaries in the repository will only occur in the `alpha` branch, and they'll be all purged before squashing into `master`.
+
+
+# TinyIFF Versions
 
 The sourcecode of **Module TinyIFF** was published in 2015 on PureBasic forums, in both the English and French forums. It was developed using PureBasic 5.40 LTS Beta 3 (x64) Linux, but still compiles with PureBasic 5.70 LTS (x86) Windows without any problems (this being the target compiler required to create PMNG plugins).
 
@@ -37,7 +61,7 @@ Updated versions of the module were published in both threads, some versions bei
 
 # TinyIFF Supported Formats
 
-Compatible with following formats:
+**Module TinyIFF** is compatible with the following formats:
 
 
 |         |      format      |       col depth        |        notes        |
@@ -66,7 +90,7 @@ Compatible with following formats:
 [TinyIFF FR]: https://www.purebasic.fr/french/viewtopic.php?p=175687 "View the TinyIFF announcement thread on PureBasic French forum"
 
 
-<!-- TinyIFF sources -->
+<!-- folder files -->
 
 [1.1 EN]: https://www.purebasic.fr/english/viewtopic.php?p=471263#p471263
 [1.1 src]: ./TinyIFF_v1.1.pbi
@@ -76,8 +100,11 @@ Compatible with following formats:
 [1.5 src]: ./TinyIFF_v1.5.pbi
 [IFF24 FR]: https://www.purebasic.fr/french/viewtopic.php?p=175863#p175863
 [IFF24 src]: ./TinyIFF24.pbi
+[LICENSE]: ./LICENSE
+[viewer exe]: ./DemoViewerTinyIFF.exe
 [viewer FR]: https://www.purebasic.fr/english/viewtopic.php?p=471264#p471264
 [viewer src]: ./DemoViewerTinyIFF.pb
+[viewer24 exe]: ./DemoViewerTinyIFF24.exe
 [viewer24 FR]: https://www.purebasic.fr/french/viewtopic.php?p=175863#p175863
 [viewer24 src]: ./DemoViewerTinyIFF24.pb
 

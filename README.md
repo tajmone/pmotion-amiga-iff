@@ -18,9 +18,11 @@ Copyright © 2019 Tristano Ajmone, [MIT License]. Based on Flype's **[Module Tin
 - [Project Contents](#project-contents)
 - [Project Status](#project-status)
     - [About the Alpha Stage and Branch](#about-the-alpha-stage-and-branch)
+        - [Precompiled Binaries](#precompiled-binaries)
 - [System Requirements](#system-requirements)
     - [Compiling File I/O Plugins](#compiling-file-io-plugins)
 - [License and Credits](#license-and-credits)
+    - [Binary Distribution License](#binary-distribution-license)
 
 <!-- /MarkdownTOC -->
 
@@ -28,6 +30,8 @@ Copyright © 2019 Tristano Ajmone, [MIT License]. Based on Flype's **[Module Tin
 
 # Project Contents
 
+- [`/bin/`](./bin) — compiled binaries release folder:
+    + [`LICENSE`][bin/LICENSE] — license for [distribution of compiled binaries].
 - [`/TinyIFF/`](./TinyIFF) — sources of [Module TinyIFF].
 - [`pmotion_file-io.pb`][pmotion_file-io.pb] — file i/o plugin boilerplate.
 - [`LICENSE`][LICENSE] — MIT License.
@@ -44,7 +48,19 @@ The code from the TinyIFF module needs to be readapted to fit the [`pmotion_file
 
 For the whole duration of the Alpha development stage all commits will be in the `alpha` branch, which will ultimately be squashed into `master` when the first stable release is reached.
 
-Furthermore, the Alpha branch will/might contain the binary compiled files of the project (plugin DLL, an others) to compensate the lack of releases (which on GitHub allows attaching archives with precompiled binaries). Before squashing into `master` all binaries will be deleted and the project will ignore them from thereon.
+### Precompiled Binaries
+
+The Alpha branch will contain also the precompiled project files (plugin DLL, an others) to compensate the current lack of releases (which on GitHub allow attachments).
+
+Version controlling compiled binaries is bad practice, but I need to make these precompiled binary previews available to Pro Motion users who don't have a PureBasic license, in order to allow testing and get feedback from them, and I didn't want to resort to external storage services.
+
+Before squashing into `master` all binaries will be deleted and the project will ignore them from thereon, and the whole `alpha` branch will be purged from the repository history.
+
+The presence of these precompiled files demands for additional license files in the project, as required by all PureBasic applications:
+
+- [`bin/LICENSE`][bin/LICENSE]
+- [`TinyIFF/LICENSE`](TinyIFF/LICENSE)
+
 
 # System Requirements
 
@@ -106,6 +122,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+## Binary Distribution License
+
+- [`bin/LICENSE`][bin/LICENSE]
+
+Distribution of precompiled binaries of the Amiga IFF plugin require the [`./bin/LICENSE`][bin/LICENSE] file instead of [`./LICENSE`][LICENSE] because the former also contains due credits and licenses for all the [third party components used by the PureBasic compiler] to generate the binary executable files, while the latter license only covers the source code.
+
+[third party components used by the PureBasic compiler]: https://www.purebasic.com/documentation/reference/license_application.html "View the licenses for the PureBasic applications on PureBasic website"
+
 
 <!-----------------------------------------------------------------------------
                                REFERENCE LINKS                                
@@ -119,6 +143,7 @@ SOFTWARE.
 <!-- project files -->
 
 [LICENSE]: ./LICENSE "View MIT License file"
+[bin/LICENSE]: ./bin/LICENSE "View the License file for distributing the compiled binaries"
 [pmotion_file-io.pb]: ./pmotion_file-io.pb "View source file"
 
 <!-- Cosmigo & PM -->
@@ -132,5 +157,9 @@ SOFTWARE.
 [Module TinyIFF]: https://www.purebasic.fr/french/viewtopic.php?p=175687 "View the TinyIFF announcement thread on PureBasic French forum"
 [TinyIFF EN]: https://www.purebasic.fr/english/viewtopic.php?p=471869 "View the TinyIFF announcement thread on PureBasic English forum"
 [TinyIFF FR]: https://www.purebasic.fr/french/viewtopic.php?p=175687 "View the TinyIFF announcement thread on PureBasic French forum"
+
+<!-- in-document xrefs -->
+
+[distribution of compiled binaries]: #binary-distribution-license "See more details about the binaries distrubtion license"
 
 <!-- EOF -->

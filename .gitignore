@@ -34,4 +34,12 @@ ehthumbs_vista.db
 
 $RECYCLE.BIN/
 
+# **************************
+# * ALPHA STAGE EXCEPTIONS *
+# **************************
+# During Alpha development we'll keep some precompiled binaries in the repo,
+# to compensate for the lack of releases and attachments...
+
+!TinyIFF/*.exe
+
 # EOF #
